@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <style>
+        header {background-color: rgb(2, 36, 149);
+                padding: 30px;
+                text-align: center;
+                margin: 0;
+                
+                }
+        footer {background-color: rgb(2, 36, 149);
+                padding: 30px;
+                text-align: center;
+                margin: 0;
+                
+                }
+        body {background-color: rgb(35, 86, 255); margin: 0;text-align: center;}
+        h1   {color: rgb(255, 165, 0);}
+        h2   {color: rgb(255, 165, 0);}
+        h3   {color: rgb(255, 165, 0);}
+        hr   {color: rgb(255, 165, 0);}
+        p    {color: rgb(255, 165, 0);}
+        table, th, td {
+                    border:1px solid rgb(255, 165, 0);
+                    color: rgb(255, 165, 0);
+                    }
+        a {background-color: rgb(255, 165, 0);}
+        img {
+            border: 5px solid rgb(255, 165, 0);
+            }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+<title>Segitseg</title>
+</head>
+<body>
+    <header>
+        <h1>Villamosságtan I.</h1>
+        <h2>Egyenáram</h2>
+    </header>
+
+    <h1 align="center">Prefixumok</h1>
+    <table style="width: 100%;">
+        <tr>
+          <th>Név</th>
+          <th>Jelölés</th>
+          <th>Jelképzett szorzó</th>
+          <th>Normál alak</th>
+        </tr>
+        <tr>
+          <td>terra</td>
+          <td>T</td>
+          <td>10<sup>12</sup></td>
+          <td>1000 000 000 000</td>
+        </tr>
+        <tr>
+            <td>giga</td>
+            <td>G</td>
+            <td>10<sup>9</sup></td>
+            <td>1000 000 000</td>
+          </tr>
+          <tr>
+            <td>mega</td>
+            <td>M</td>
+            <td>10<sup>6</sup></td>
+            <td>1000 000</td>
+          </tr>
+          <tr>
+            <td>kilo</td>
+            <td>k</td>
+            <td>10<sup>3</sup></td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>10<sup>0</sup></td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>mili</td>
+            <td>m</td>
+            <td>10<sup>-3</sup></td>
+            <td>0,001</td>
+          </tr>
+          <tr>
+            <td>mikro</td>
+            <td><span>&#181;</span></td>
+            <td>10<sup>-6</sup></td>
+            <td>0,000 001</td>
+          </tr>
+          <tr>
+            <td>nano</td>
+            <td>n</td>
+            <td>10<sup>-9</sup></td>
+            <td>0,000 000 001</td>
+          </tr>
+          <tr>
+            <td>piko</td>
+            <td>p</td>
+            <td>10<sup>-12</sup></td>
+            <td>0,000 000 000 001</td>
+          </tr>
+      </table>
+      <hr>
+      <h1 align="center">Ellenállás</h1>
+      <h2 align="center">Fogalma</h2>
+      <p>Az anyag azon tulajdonsága, hogy akadályozza a szabad töltéshordozók áramlását.</p>
+      <p>Kiszámítása: R = U/I,  R = 1/G</p>
+      <img src="https://d1yqpar94jqbqm.cloudfront.net/styles/media_full/s3/images/2c8890e211c28905409080a9c70784defc186e7e.jpg?itok=I3N34t-N" alt="Eredo" width="220" height="280" style="position: absolute; right: 120px;">
+      <h2 align="center">Vezetőképesség</h2>
+      <p>Az ellenállás reciproka.</p>
+      <p>Kiszámítása: G = I/U,  G = 1/R</p>
+      <h2>Eredő ellenállás</h2>
+      <p>Bármelyin bonyolult ellenállás hálózat helyettesíthető egy darab ellenállással.</p>
+      <h3>Sorosan kapcsolt ellenállások(a)</h3>
+      <p>R<sub>e</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub> + R<sub>4</sub></p>
+      <h3>Párhuzamosan kapcsolt ellenállások(b)</h3>
+      <p>Replusz művelet: R<sub>e</sub> = R<sub>1</sub> x R<sub>2</sub> = (R<sub>1</sub> * R<sub>2</sub>) / (R<sub>1</sub> + R<sub>2</sub>)</p>
+      <p>R<sub>e</sub> = R<sub>1</sub> x R<sub>2</sub> x R<sub>3</sub> x R<sub>4</sub></p>
+      <p>VAGY</p>
+      <p>G<sub>e</sub> = G<sub>1</sub> + G<sub>2</sub> + G<sub>3</sub> + G<sub>4</sub></p>
+      <hr>
+      <h1>Ohm törvény</h1>
+      <p>Egy zárt rendszerben az áramköri elemeken eső feszültség és folyó áram hányadosa egy állandó érték, mely jellemző a fogyasztóra.</p>
+      <p>R = U/I = állandó</p>
+      <hr>
+      
+      <img src="https://www.electronicshub.org/wp-content/smush-webp/2015/03/image.jpg.webp" alt="Kirchhoff2" width="170" height="220" style="position: absolute; right: 120px;"><img src="https://www.electronicshub.org/wp-content/smush-webp/2015/03/2.Kirchhoff%E2%80%99s-Current-Law.jpg.webp" alt="Kirchhoff2" width="170" height="220" style="position: absolute; left: 120px;"> 
+     <h1>Kirchhoff I.-II. törvénye</h1>
+    
+     <p>I. törvénye (csomóponti törvény): Egy csomópontba befolyó áramok összege megegyezik a csomópontból <br>kifolyó áramok összegével. Először fel kell venni egy körüljárási irányt, majd</p>
+     <p>Ablakhurok: Olyan hurok, ami nem tartalmaz több hurkot.</p>
+     <p>0 = I<sub>1</sub> + I<sub>2</sub> - I<sub>3</sub> - I<sub>4</sub></p>
+     <p>II. törvénye (hurok törvény): Egy zárt hurokban az áramköri elemeken eső feszültségek előjeles összege nulla.</p>
+     <p>0 = U<sub>R1</sub> + U<sub>R2</sub> + U<sub>R3</sub> + U<sub>R4</sub> - U<sub>R5</sub> - U<sub>1</sub> + U<sub>2</sub> - U<sub>3</sub> - U<sub>4</sub></p>
+     <br>
+     <hr>
+     <h1>Norton-Thevenin ekvivalencia</h1>
+     <h2>Norton generátor (jobb oldali)</h2>
+     <p>0 = I<sub>0</sub> - I<sub>b</sub></p>
+     <p>I<sub>b</sub> = U<sub>k</sub> * G<sub>b</sub></p>
+     <p>I<sub>k</sub> = -U<sub>k</sub> * G<sub>b</sub> + I<sub>0</sub></p>
+     <img src="https://www.cxi1.co.uk/Theory/images/th_norton.png" alt="generatorok" width="400" height="200" style="position: absolute; right: 80px;">
+     <h2>Thevenin generátor (bal oldali)</h2>
+     <p>0 = U<sub>0</sub> - U<sub>b</sub></p>
+     <p>0 = I<sub>k</sub> * R<sub>b</sub> + U<sub>k</sub> - U<sub>0</sub></p>
+     <p>I<sub>k</sub> = - 1/R<sub>b</sub> * U<sub>k</sub> + U<sub>0</sub>/R<sub>b</sub></p>
+     <h2>Ekvivalencia</h2>
+     <p>I<sub>0</sub> * R<sub>b</sub> = U<sub>0</sub> = I<sub>0</sub>/G<sub>b</sub></p>
+     <h2>Maximum teljesítmény</h2>
+     <p>R<sub>tmax</sub> = R<sub>b</sub></p>
+     <p>P<sub>tmax</sub> = (U<sub>0</sub><sup>2</sup> * R<sub>b</sub>) /  (R<sub>b</sub> + R<sub>t</sub>)<sup>2</sup> = U<sub>0</sub><sup>2</sup> / (4 * R<sub>b</sub><sup>2</sup>)</p>
+     <p>&eta; = R<sub>t</sub> / (2 * R<sub>t</sub>) = 50%</p>
+     <hr>
+     <h1>Szuperpozíció tétele</h1>
+     <p>Ha egy kapcsolásban több generátor is található, a hatásaikat külön vizsgáljuk meg, majd összegezzük őket.</p>
+     <p>Feszültség generátor ----> rövidzár</p>
+     <p>Áram generátor ----> szakadás</p>
+     <hr>
+     <img src="https://centroszet.hu/tananyag/elektro_bovitett/image278.jpg" alt="millman" width="250" height="170" style="position: absolute; right: 120px;">
+     <h1>Millman tétel</h1>
+     <p>Párhuzamos kapcsolt feszültség generátorok tétele</p>
+     <p>Sorosan kapcsolt áram generátorok tétele</p>
+     <p>U<sub>AB</sub> = (&Sigma; U<sub>i</sub>/R<sub>i</sub>) / (&Sigma; 1/R<sub>i</sub>)</p>
+     <p>Ha az egyik ágban nincs generátor, akkor azt a képlet felsőrészében nem kell beleszámolni.</p>
+     <br>
+     <hr>
+     <h1>Független hurokrendszer</h1>
+     <h2>Feltételek</h2>
+     <p>Ágaknak megfelelő ismeretlen, Á = H + (CS - 1) (Csomóponti egyenletek száma: CS - 1)</p>
+     <p>Minden huroknak kell lennie legalább egy saját ágnak.</p>
+     <p>Minden ág legalább egy huroknban szerepeljen.</p>
+     <p>Síkhálózat, ahol az ágak(gráf) lerajzolható kereszteződés nélkül.</p>
+     <hr>
+     <h1>Hurok áramok módszerének lépései</h1>
+     <p>Áram generátorok átalakítása feszültség generátorokká.</p>
+     <p>Hurok irányok felrajzolása (ajánlott mindegyiket azonos irányba),</p>
+     <p>Hurok egyenlet felírása ismeretlenekkel.</p>
+     <p>Egyenletek rendezése.</p>
+     <p>Háromismeretlenes egyenletrendszer megoldása.</p>
+     <hr>
+     <h1>Csomóponti potenciálok módszerének lépései</h1>
+     <p>Feszültség generátorok átalakítása áram generátorokká.</p>
+     <p>Földelés elhelyezése (,ha van olyan generátor, amit nem lehet átalakítani, akkor ahhoz kell tenni).</p>
+     <p>Csomóponti egyenlet felírása ismeretlenekkel.</p>
+     <p>Egyenletek rendezése.</p>
+     <p>Háromismeretlenes egyenletrendszer megoldása.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 ><a href="ez2.html" style="background-color: rgb(35, 86, 255);">Teszt</a></h1>
+
+
+
+<footer>
+    <h1><a href="https://neptun.uni-obuda.hu/hallgato/login.aspx">Neptun</a>                <a href="https://idp.uni-obuda.hu/saml2/module.php/core/loginuserpass.php?AuthState=_186bb45a16ba01d062532481c32b3d70214f4f1a4d%3Ahttps%3A%2F%2Fidp.uni-obuda.hu%2Fsaml2%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttps%253A%252F%252Fmain.elearning.uni-obuda.hu%252Fauth%252Fsaml2%252Fsp%252Fmetadata.php%26RelayState%3Dhttps%253A%252F%252Fmain.elearning.uni-obuda.hu%252Fauth%252Fsaml2%252Flogin.php%26cookieTime%3D1731780668">Moodle</a>                 <a href="https://oktatas.mai.kvk.uni-obuda.hu/login/index.php">Oktatás.mai</a></h1>
+</footer>
+</body>
+</html>

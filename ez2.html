@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <style>
+        header {background-color: rgb(2, 36, 149);
+                padding: 30px;
+                text-align: center;
+                margin: 0;
+                
+                }
+        footer {background-color: rgb(2, 36, 149);
+                padding: 30px;
+                text-align: center;
+                margin: 0;
+                
+                }
+        body {background-color: rgb(35, 86, 255); margin: 0;text-align: center;}
+        h1   {color: rgb(255, 165, 0);}
+        h2   {color: rgb(255, 165, 0);}
+        h3   {color: rgb(255, 165, 0);}
+        hr   {color: rgb(255, 165, 0);}
+        p    {color: rgb(255, 165, 0);}
+        table, th, td {
+                    border:1px solid rgb(255, 165, 0);
+                    color: rgb(255, 165, 0);
+                    }
+        a {background-color: rgb(255, 165, 0);}
+        img {
+            border: 5px solid rgb(255, 165, 0);
+            }
+    </style>
+    <script>
+        function ellenoriz() {
+            const cel1 = 108;
+            const cel2 = 20.5;
+            const cel3 = 0.8;
+
+            const szam1 = parseFloat(document.getElementById('szam1').value);
+            const szam2 = parseFloat(document.getElementById('szam2').value);
+            const szam3 = parseFloat(document.getElementById('szam3').value);
+
+            if (!isNaN(szam1)) {
+                if ((cel1-2) <= szam1 && szam1 <= (cel1+2)) {
+                    alert(`1.feladat\nA megoldás: HELYES!`);
+                } else {
+                    alert(`1.feladat\nA megoldás: HIBÁS!\nA helyes megoldás: ${cel1}`);
+                }
+            } else {
+                alert("Az első megoldást nem adtad meg helyesen!");
+            }
+
+            if (!isNaN(szam2)) {
+                if (szam2 === cel2) {
+                    alert(`2.feladat\nA megoldás: HELYES!`);
+                } else {
+                    alert(`2.feladat\nA megoldás: HIBÁS!\nA helyes megoldás: ${cel2}`);
+                }
+            } else {
+                alert("A második számot nem adtad meg helyesen!");
+            }
+
+            if (!isNaN(szam3)) {
+                if ((cel3-0.05) <= szam3 && szam3 <= (cel3+0.05)) {
+                    alert(`3.feladat\nA megoldás: HELYES!`);
+                } else {
+                    alert(`3.feladat\nA megoldás: HIBÁS!\nA helyes megoldás: ${cel3}\nJ1=1.01\nJ2=1.8\nJ3=0,32`);
+                }
+            } else {
+                alert("A harmadik számot nem adtad meg helyesen!");
+            }
+        }
+    </script>
+<title>Teszt</title>
+</head>
+<body>
+    <header>
+        <h1>Villamosságtan I.</h1>
+        <h2>Teszt: Egyenáram</h2>
+    </header>
+
+
+
+<h1>1. feladat: Eredőellenállás számítás</h1>
+<img src="1.png" alt="millman" width="400" height="320">
+<p>Számítsa ki az AB pont ellenállását!</p>
+<label for="szam1" style="color: rgb(255, 165, 0);">R<sub>AB</sub>(&Omega;):</label>
+<input type="number" id="szam1" name="szam1"><br><br>
+    
+
+<h1>2. feladat: Millman tétel</h1>
+<img src="2.png" alt="millman" width="400" height="320">
+<p>Számítsa ki az AB pont feszültségét! Figyeljen a feszültség irányokra!</p>
+<label for="szam2" style="color: rgb(255, 165, 0);">U<sub>AB</sub>(V):</label>
+<input type="number" id="szam2" name="szam2"><br><br>
+
+
+
+
+<h1>3. feladat: Hurok áramok módszere</h1>
+<img src="3.png" alt="millman" width="400" height="300">
+<p>Számítsa ki az I áramot!</p>
+<label for="szam3" style="color: rgb(255, 165, 0);">I(mA):</label>
+<input type="number" id="szam3" name="szam3"><br><br>
+
+    
+    <button onclick="ellenoriz()">Ellenőriz</button>
+
+
+<h1 ><a href="ez.html" style="background-color: rgb(35, 86, 255);">Vissza az anyaghoz</a></h1>
+<footer>
+    <h1><a href="https://neptun.uni-obuda.hu/hallgato/login.aspx">Neptun</a>                <a href="https://idp.uni-obuda.hu/saml2/module.php/core/loginuserpass.php?AuthState=_186bb45a16ba01d062532481c32b3d70214f4f1a4d%3Ahttps%3A%2F%2Fidp.uni-obuda.hu%2Fsaml2%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttps%253A%252F%252Fmain.elearning.uni-obuda.hu%252Fauth%252Fsaml2%252Fsp%252Fmetadata.php%26RelayState%3Dhttps%253A%252F%252Fmain.elearning.uni-obuda.hu%252Fauth%252Fsaml2%252Flogin.php%26cookieTime%3D1731780668">Moodle</a>                 <a href="https://oktatas.mai.kvk.uni-obuda.hu/login/index.php">Oktatás.mai</a></h1>
+</footer>
+</body>
+</html>
